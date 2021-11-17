@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.group-header {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.wrap-header {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
