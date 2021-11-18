@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&display=swap");
+
 .group-header {
+  background-color: white;
   width: 100%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
+  z-index: 9;
 }
 
 .wrap-header {
@@ -59,6 +63,112 @@
   display: none;
 }
 
+main {
+  padding-top: 90px;
+}
+
+.group-main {
+  width: 100%;
+}
+
+.wrap-main {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.background-image {
+  width: 100%;
+  height: 600px;
+  background-image: url("img/Banner@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box-text {
+  margin-left: 50px;
+  padding-top: 90px;
+  width: 500px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #6d4545;
+  font-family: Malgun Gothic;
+}
+
+h2 {
+  font-size: 2em;
+  color: #6d4545;
+  font-family: Malgun Gothic;
+}
+
+.paragraph {
+  font-size: 1.1em;
+  color: #6d4545;
+  font-family: Malgun Gothic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-reserve {
+  background-color: #feaf02;
+  text-transform: uppercase;
+  width: 220px;
+  padding: 17px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: Malgun Gothic;
+}
+
+.btn-reserve:hover {
+  opacity: 0.9;
+}
+
+.group-dogs {
+  padding: 30px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-dog {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-dog {
+  width: 200px;
+}
+
+.box-dog h3 {
+  font-size: 1.2em;
+  font-family: Malgun Gothic;
+}
+
+.box-dog button {
+  background-color: #feaf02;
+  color: white;
+  padding: 12px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.box-dog button:hover {
+  opacity: 0.9;
+}
+
 @media (max-width: 960px) {
   .img-logo {
     width: 140px;
@@ -66,6 +176,21 @@
   .list-nav {
     font-size: 0.8em;
     font-weight: 200;
+  }
+}
+
+@media (max-width: 990px) {
+  .box-dog {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-dog {
+    width: 150px;
   }
 }
 
@@ -139,7 +264,7 @@
     flex-direction: column;
     position: absolute;
     z-index: 1;
-    top: 100px;
+    top: 93px;
     left: 0%;
     width: 100%;
     height: 386px;
@@ -159,5 +284,82 @@
     text-align: center;
     background-color: #feb411;
     color: black;
+  }
+
+  .group-dogs {
+    flex-direction: column;
+  }
+
+  .box-dog {
+    width: 100%;
+    height: 620px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .img-dog {
+    width: 500px;
+  }
+
+  .box-dog h3 {
+    font-size: 1.8em;
+    font-family: Malgun Gothic;
+  }
+}
+
+@media (max-width: 685px) {
+  .box-text {
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 630px) {
+  .box-dog {
+    height: 420px;
+  }
+
+  .img-dog {
+    width: 300px;
+  }
+}
+
+@media (max-width: 402px) {
+  .box-dog {
+    width: 100%;
+    height: 320px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .box-dog h3 {
+    font-size: 1.4em;
+    font-family: Malgun Gothic;
+  }
+
+  .img-dog {
+    width: 200px;
+  }
+}
+
+@media (max-width: 292px) {
+  .box-dog {
+    width: 100%;
+    height: 220px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .box-dog h3 {
+    font-size: 1em;
+    font-family: Malgun Gothic;
+  }
+
+  .img-dog {
+    width: 130px;
   }
 }
