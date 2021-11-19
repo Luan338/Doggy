@@ -6,6 +6,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Mochiy+Pop+P+One&family=Montagu+Slab:wght@100&family=Roboto:wght@100&display=swap");
+
 .group-header {
   background-color: white;
   width: 100%;
@@ -64,7 +66,7 @@
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 110px;
 }
 
 .group-main {
@@ -83,6 +85,7 @@ main {
   background-image: url("img/Banner@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .box-text {
@@ -94,19 +97,19 @@ main {
 h1 {
   font-size: 2.5em;
   color: #6d4545;
-  font-family: Malgun Gothic;
+  font-family: "Malgun Gothic";
 }
 
 h2 {
   font-size: 2em;
   color: #6d4545;
-  font-family: Malgun Gothic;
+  font-family: "Malgun Gothic";
 }
 
 .paragraph {
   font-size: 1.1em;
   color: #6d4545;
-  font-family: Malgun Gothic;
+  font-family: "Malgun Gothic";
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -121,7 +124,7 @@ h2 {
   border: none;
   cursor: pointer;
   font-size: 1.2em;
-  font-family: Malgun Gothic;
+  font-family: "Malgun Gothic";
 }
 
 .btn-reserve:hover {
@@ -129,7 +132,8 @@ h2 {
 }
 
 .group-dogs {
-  padding: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -151,7 +155,7 @@ h2 {
 
 .box-dog h3 {
   font-size: 1.2em;
-  font-family: Malgun Gothic;
+  font-family: "Malgun Gothic";
 }
 
 .box-dog button {
@@ -169,14 +173,297 @@ h2 {
   opacity: 0.9;
 }
 
-@media (max-width: 960px) {
-  .img-logo {
-    width: 140px;
-  }
-  .list-nav {
-    font-size: 0.8em;
-    font-weight: 200;
-  }
+.background-dog {
+  width: 100%;
+  height: 510px;
+  background-image: url("img/Banner\ why@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contain-text {
+  margin-left: 80px;
+  padding-top: 90px;
+  width: 500px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contain-text h2 {
+  font-family: "Malgun Gothic";
+  font-size: 2.5em;
+  color: #373737;
+}
+
+.contain-text p {
+  font-family: "Malgun Gothic";
+  font-size: 1.4em;
+}
+
+.contain-text ul {
+  list-style: none;
+}
+
+.contain-text ul li p {
+  font-family: "Malgun Gothic";
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.circle {
+  background-color: #feaf02;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 30px;
+}
+
+.container-videos {
+  width: 100%;
+  background-color: #feaf02;
+}
+
+.box-title {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.box-title h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: "Malgun Gothic";
+}
+
+.group-videos-dogs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.box {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 510px;
+  height: 360px;
+  text-align: center;
+  background-color: white;
+}
+
+.box h3 {
+  bottom: 75px;
+  position: relative;
+  font-family: "Malgun Gothic";
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #3c4049;
+}
+
+.contain-video {
+  position: relative;
+}
+
+.dog-video {
+  position: relative;
+  width: 500px;
+}
+
+.img-play {
+  width: 80px;
+  cursor: pointer;
+  bottom: 200px;
+  right: 0px;
+  position: relative;
+}
+
+.img-play2 {
+  width: 80px;
+  cursor: pointer;
+  bottom: 200px;
+  right: 0px;
+  position: relative;
+}
+
+.group-footer {
+  width: 100%;
+}
+
+.wrap-footer {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.contain-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #3c4049;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.img-logo-footer {
+  margin-top: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.contact-footer {
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact-footer h4 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: "Malgun Gothic";
+  font-weight: 600;
+}
+
+.contact-footer ul {
+  list-style: none;
+}
+
+.contact-footer ul li {
+  margin-top: 5px;
+  font-size: 1em;
+  font-family: "Malgun Gothic";
+}
+
+.box-time {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.box-time h4 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: "Malgun Gothic";
+  font-weight: 600;
+}
+
+.box-time ul {
+  list-style: none;
+}
+
+.box-time ul li {
+  margin-top: 5px;
+  font-size: 1em;
+  font-family: "Malgun Gothic";
+}
+
+.box-links {
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.box-links h4 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: "Malgun Gothic";
+  font-weight: 600;
+}
+
+.box-links ul {
+  list-style: none;
+}
+
+.box-links ul li {
+  margin-top: 5px;
+  font-size: 1em;
+  font-family: "Malgun Gothic";
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.box-links ul li:hover {
+  color: #feaf02;
+}
+
+.box-socials {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.box-socials h4 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: "Malgun Gothic";
+  font-weight: 600;
+}
+
+.box-socials ul {
+  list-style: none;
+}
+
+.box-socials ul li {
+  margin-top: 5px;
+  font-size: 1em;
+  font-family: "Malgun Gothic";
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.box-socials ul li:hover {
+  color: #feaf02;
+}
+
+.box-reserved {
+  width: 100%;
+  background-color: #2e2f34;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.box-reserved h4 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 100;
+  font-family: "Malgun Gothic";
+  margin-left: 5%;
+  text-align: center;
+}
+
+.reference {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #222326;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reference p {
+  font-size: 1em;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 @media (max-width: 990px) {
@@ -192,9 +479,43 @@ h2 {
   .img-dog {
     width: 150px;
   }
+
+  .box-socials ul li {
+    font-size: 0.8em;
+  }
+
+  .box-links ul li {
+    font-size: 0.8em;
+  }
+
+  .box-time ul li {
+    font-size: 0.8em;
+  }
+
+  .contact-footer ul li {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 960px) {
+  main {
+    padding-top: 100px;
+  }
+
+  .img-logo {
+    width: 140px;
+  }
+  .list-nav {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
 }
 
 @media (max-width: 760px) {
+  main {
+    padding-top: 90px;
+  }
+
   .img-logo {
     width: 120px;
   }
@@ -306,6 +627,69 @@ h2 {
     font-size: 1.8em;
     font-family: Malgun Gothic;
   }
+
+  .box-logo-footer {
+    height: 190px;
+  }
+
+  .img-logo-footer {
+    width: 100px;
+    margin-top: 0;
+  }
+
+  .box-socials {
+    height: 50px;
+  }
+
+  .box-socials ul {
+    display: none;
+  }
+
+  .box-links {
+    height: 100px;
+  }
+
+  .box-links ul {
+    display: none;
+  }
+
+  .box-time {
+    height: 100px;
+  }
+
+  .box-time ul {
+    display: none;
+  }
+
+  .contact-footer {
+    height: 100px;
+  }
+
+  .contact-footer ul {
+    display: none;
+  }
+
+  .box-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contact-footer h4:hover {
+    color: #feaf02;
+  }
+
+  .box-time h4:hover {
+    color: #feaf02;
+  }
+
+  .box-links h4:hover {
+    color: #feaf02;
+  }
+
+  .box-socials h4:hover {
+    color: #feaf02;
+  }
 }
 
 @media (max-width: 685px) {
@@ -323,6 +707,69 @@ h2 {
 
   .img-dog {
     width: 300px;
+  }
+
+  .contain-text {
+    margin-left: 10%;
+    padding-top: 90px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 532px) {
+  .contain-text h2 {
+    font-size: 2em;
+  }
+  .contain-text ul li {
+    width: 100%;
+  }
+
+  .box-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .box {
+    margin-bottom: 30px;
+    width: 310px;
+    height: 360px;
+  }
+
+  .dog-video {
+    width: 300px;
+  }
+
+  .img-play,
+  .img-play2 {
+    width: 50px;
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 456px) {
+  .contain-text h2 {
+    font-size: 1.5em;
+  }
+  .contain-text p {
+    font-size: 1.2em;
+  }
+  .contain-text ul li p {
+    font-size: 1em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .contain-text {
+    padding-top: 80px;
+    width: 80%;
+    height: 500px;
   }
 }
 
@@ -343,6 +790,66 @@ h2 {
   .img-dog {
     width: 200px;
   }
+
+  .reference p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 321px) {
+  .btn-reserve {
+    width: 150px;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+
+  .contain-text {
+    padding-top: 100px;
+    width: 80%;
+    height: 400px;
+  }
+  .contain-text h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .contain-text p {
+    font-size: 0.8em;
+  }
+  .contain-text ul li p {
+    font-size: 0.7em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .box {
+    width: 100%;
+    height: 250px;
+  }
+
+  .box h3 {
+    bottom: 16%;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .contain-video {
+    width: 100%;
+    position: relative;
+  }
+
+  .dog-video {
+    width: 100%;
+  }
+
+  .img-play,
+  .img-play2 {
+    width: 20%;
+    bottom: 45%;
+  }
+
+  .reference p {
+    font-size: 0.5em;
+  }
 }
 
 @media (max-width: 292px) {
@@ -361,5 +868,9 @@ h2 {
 
   .img-dog {
     width: 130px;
+  }
+  .contain-text h2 {
+    font-size: 1em;
+    text-align: center;
   }
 }
